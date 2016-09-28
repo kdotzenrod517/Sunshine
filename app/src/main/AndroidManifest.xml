@@ -44,13 +44,12 @@
                 android:value="com.example.kdotz.sunshine.app.MainActivity" />
         </activity>
 
+        <provider
+            android:authorities="com.example.kdotz.sunshine.app"
+            android:name=".data.WeatherProvider"
+            android:enabled="true"
+            android:exported="true" ></provider>
 
     </application>
-
-    <provider
-        android:authorities="com.example.kdotz.sunshine.app"
-        android:name=".data.WeatherProvider"
-        android:exported="true" ></provider>
-
 
 </manifest>
